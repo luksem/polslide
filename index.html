@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+  	<link rel="stylesheet" href="style.css">
+	<title>Hello world !</title>	 
+</head>
+<body>
+<h1>polSlide - polski slider :)</h1>
+<p>Efekt slide (<a href="fade.html">zobacz efekt fade() w akcji</a>)</p>
+
+<div>
+<ul id="slider">
+	<li><img src="images/0.jpg"></li>
+	<li><img src="images/1.jpg"></li>
+	<li><img src="images/2.jpg"></li>
+	<li><img src="images/3.jpg"></li>
+</ul>
+</div>
+
+</body>
+<script src="skrypt.js"></script>
+<script>
+		
+	var slider = document.getElementById('slider');
+	polSlide(slider, 2000, 'slide', true, true);
+</script>
+<!--[if lt IE 9]><script src="polyfill.js"></script><![endif]--> 
+<!--[if lt IE 9]><script src="html5.js"></script><![endif]--> 
+</html>
